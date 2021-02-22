@@ -62,49 +62,27 @@ class App extends Component {
 
   return (
 
-    <View style={{flex: 1}}>
+    <View style={{flex: 1, flexDirection:'row'}}>
 
-      <View style={{flex: 2,backgroundColor:'green'}}>
+        <View style={{flex: .334,flexDirection:'column', backgroundColor:'white'}}>
+            <View style={{flex: .10, backgroundColor:'white'}}>
+              <Text> Navigation 1 </Text>
+            </View>
 
-      <View style={{flex: 2, flexDirection:'row', backgroundColor:'green'}}>
+            <View style={{flex: .10, backgroundColor:'green'}}>
+              <Text> Navigation 3 </Text>
+            </View>
 
-        <View style={{flex: 2, backgroundColor:'red'}}>
-            <Text> Hello Irfan what is your confusion please tell me, Hello Irfan what is your confusion please tell me Hello Irfan what is your confusion please tell me </Text>
+            <View style={{flex: .10, backgroundColor:'blue'}}>
+              <Text> Navigation 2 </Text>
+            </View>
         </View>
 
-        <View style={{flex: 2, backgroundColor:'blue'}}>
-
+        <View style={{flex: .334, backgroundColor:'orange'}}>
         </View>
 
-      </View>
-
-      </View>
-
-      <View style={{flex: 4,}}>
-
-      <TextInput
-        style={{ height: 40, borderColor: 'gray', borderWidth: 1, marginBottom:30,marginTop:30 }}
-        onChangeText={text => onChangeText(text)}
-        value={12}
-        />
-
-        <TextInput
-          style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
-          onChangeText={text => onChangeText(text)}
-          value={12}
-          />
-
-      </View>
-
-      <View style={{flex: 2}}>
-
-      <Button
-      title="Learn More"
-      color="black"
-      accessibilityLabel="Learn more about this purple button"
-      />
-
-      </View>
+        <View style={{flex: .334, backgroundColor:'green'}}>
+        </View>
 
     </View>
 
